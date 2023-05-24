@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>Rubik's cube</title>
+        <link rel="stylesheet" href="exp9.css">
+    </head>
+    <body>
+        <h1 style="color: brown; text-align: center;">Algorithm to solve a Rubik's Cube</h1>
+            <p id="top">
+            <p>Arilova Visakhapatnam. <br/> G.Hemanth Kumar<br/>contact info : 9390306225</p>
+            <hr/>
+        <p>For detailed information of a rubik's cube <button><a href="https://en.wikipedia.org/wiki/Rubik%27s_Cube"target="_blank">
+             Click here</a></button></p>
+        <h1 class="model"><b>About a rubik's cube</b></h1>
+        <hr/>
+        <p>A Rubik's Cube is an interesting puzzle invented by 'Erno Rubik' which has 43 quintillion possible configurations.
+            But with the use of certain algorithms, it can be solved easily.There are many variations of the Rubik's cube 
+            nowadays but the most basic one is the 3x3x3 Rubik's cube.</p><hr/>   
+        <div class="cube1">         
+        <img src="images/cube1_pic.png" alt="Rubik's cube" 
+        title="This picture reepresents how the rubik's cube looks like" width="350" height="250" align="center">
+        </div>
+        <h2 class="model"><b>Basic rotations of a rubik's cube</b></h2>
+        <hr />
+        <ol><li><b>R</b> Rotate the right layer clockwise.</li>
+            <li><b>R'</b>: Rotate the right layer anti-clockwise.</li>
+            <li><b>L</b> :Rotate the left layer clockwise.</li>
+            <li><b>L'</b> :Rotate the left layer anti-clockwise.</li>
+            <li><b>U</b> :Rotate the top layer clockwise.</li>
+            <li><b>U'</b> :Rotate the top layer anti-clockwise.</li>
+            <li><b>F</b> :Rotate the front layer clockwise.</li>
+            <li><b>F'</b> :Rotate the front layer anti-clockwise.</li></ol><hr/>
+        <h3 class="model"><b>Beginners method</b></h3>
+        <hr/>
+        <p>The easy solution to solve a <ins>Rubik's cube</ins> is to follow the approach to first solve the bottom layer, 
+            then the middle layer, and then finally the top layer.</p>
+        <div class="cube1">
+        <img src="images/cube2img.png" alt="Layers of the cube" width="400" height="250">
+        </div>
+        
+        <h3 class="model"><b>Below are the steps to solve a Rubik's cube:</b></h3>
+            <fieldset>
+            <dt><b>Step-1:</b></dt>
+            <dd>First choose a centerpiece of any color (say white) and then make a white 
+                cross by bringing all the four edge pieces adjacent to the white center.</dd>
+                <div class="cube1"><img src="images/cube3img.png"></div>
+                
+            <dt><b>Step-2:</b></dt>
+            <dd> Match colors of all four centerpieces of the lateral face with the edges of the bottom layer one by one and 
+                sending the matched pairs in opposite directions and then bringing them again to make a cross of white.</dd>
+                <div class="cube1">
+                <img src="images/cube4img.png" width="350" height="200"></div>
+                <dd>After matching all the layers, the cube will look like this-</dd>
+                <div class="cube1"><img src="images/cube5img.gif" width="400" height="300"></div>
+
+            <dt><b>Step-3:</b></dt>
+            <dd>Set corners of the bottom layer by first matching the correct corner matching its desired color. Then apply the algorithm <em>R U R' U'</em>
+                and repeat the same algorithm till the bottom corner piece is set at its correct position as shown below</dd>
+                <div class="cube1"><img src="images/cube6img.png" width="400" height="200"></div>
+                <dd>After setting all the corners, the cube will look like this-</dd>
+                <div class="cube1"><img src="images/cube7img.gif" width="400" height="250"></div>
+
+            <dt><b>Step-4:</b></dt>
+            <dd>Make the second layer by matching all four edges at the lateral faces. First, match the color of the top layer edge with its 
+                center layer and observe the other part of the piece i.e top facing color.</dd>
+                <ul>
+                    <li><strong>Case 1:</strong> the other part color matches with the centerpiece at the right side, 
+                        then apply the algorithm  <em>U R U' R' U' F' U F.</em></li>
+                    <li><strong>Case 2:</strong>  If the other part color matches with the centerpiece at the left side, then 
+                        apply the algorithm   <em>U' L' U L U F U' F'.</em></li>
+                </ul>
+            <dd>After applying this to all other pieces, the cube will look like this-</dd>
+            <div class="cube1"><img src="images/cube8img.gif" width="400" height="300"></div>
+
+            <dt><b>Step-5:</b></dt>
+            <dd>Make the yellow cross on the top layer by applying the simple algorithm  <em>F R U R' U' F'</em>  1-3 times as shown below.</dd>
+            <div class="cube1"><img src="images/cube9img.png" width="400" height="300"></div>
+
+            <dt><b>step-6:</b></dt>
+            <dd> Now match any one edge of the top layer with the centerpiece in the middle layer, and then apply 
+                the algorithm <em>F R U R' U' F'</em> until all the edges are matched.</dd>
+                <div class="cube1"><img src="images/cube10img.gif" width="400" height="250"></div>
+
+            <dt><b>Step-7:</b></dt>
+            <dd>Now to match all the corner pieces on the top layer, first see the corner which is already being matched and keep it as 
+                the front face and towards the right. If none of the corner pieces are in the right place, 
+                you can hold the cube in any orientation with the unmatched pieces on top and apply the algorithm <em>U R U' L' U R' U' L.</em></dd>
+                <p>After applying this algorithm 1-3 times the cube will look like-</p>
+                <div class="cube1"><img src="images/cube11img.gif" width="400" height="250"></div>
+
+            <dt><b>Step-8:</b></dt>
+            <dd> In the final step keep yellow as the front face and start from any corner apply the algorithm <i>U R' U' R</i> until the corner arranges correctly, 
+                then rotate the top layer to bring another disarranged corner on the top right side and repeat <i>U R' U' R</i> algorithm again to arrange it, and so on. 
+                After arranging all the corner pieces, just move the yellow facing layer 1-2 times if needed to completely solve your cube. </dd>  
+                <div class="cube1"><img src="images/cube12img.gif" width="400" height="250"></div>
+            </fieldset> 
+
+    
+
+            <h3 class="model">Types of cubes</h3>
+            <table border="5">
+                <thead>Types of cubes</thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>2x2 cube</th>
+                    <th>3x3 cube</th>
+                    <th>4x4 cube</th>
+                    <th>triangle </th>
+                    <th>Mirror cube</th>
+                </tr>
+                <tr>
+                    <th>Faces</th>
+                    <td>6 faces</td>
+                    <td>6 faces</td>
+                    <td>6 faces</td>
+                    <td>6 faces</td>
+                    <td>5 faces</td>
+                </tr>
+                <tr>
+                    <th>Levels</th>
+                    <td>2 levels</td>
+                    <td>3 levels</td>
+                    <td>4 levels</td>
+                    <td>3 levels</td>
+                    <td>3 levels</td>
+                </tr>
+                <tr>
+                    <th>Difficulty</th>
+                    <td>Easy</td>
+                    <td>little harder</td>
+                    <td>harder</td>
+                    <td>easy</td>
+                    <td>Harder</td>
+                </tr>
+                <tr>
+                    <th>Purchase</th>
+                    <td><a href="https://www.amazon.in/Cubelelo-Black-Speed-Magic-Puzzle/dp/B07TZH9TFT/ref=sr_1_1_sspa?crid=1HK8AYFITSKPH&keywords=2x2+cube&qid=1675488445&sprefix=2x2%2Caps%2C301&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank"><button>click</button></a></td>
+                    <td><a href="https://www.amazon.in/Eternal-3%C3%973%C3%973-Speed-Stickerless-Magic/dp/B076MHHK2F/ref=sr_1_1_sspa?crid=ZPOHUSE2Q4RO&keywords=3+cube+3x3&qid=1675488588&sprefix=3+cube%2Caps%2C415&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&smid=A3A31O0HZQ2B2C" target="_blank"><button>click</button></a></td>
+                    <td><a href="https://www.amazon.in/Cubelelo-QiYuan-Stickerless-Magic-Puzzle/dp/B08TBN3SKR/ref=sr_1_1_sspa?crid=3AJPP6P93N4RZ&keywords=4x4+rubik%27s+cube&qid=1675488658&sprefix=4%2Caps%2C375&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank"><button>click</button></a></td>
+                    <td><a href="https://www.amazon.in/ETERNAL-Pyraminx-Stickerless-Triangle-Multicolor/dp/B07NTTZ8PT/ref=sr_1_1_sspa?crid=1LONDVYYX9N48&keywords=triangle+rubik%27s+cube&qid=1675488724&sprefix=triangl%2Caps%2C405&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank"><button>click</button></a></td>
+                    <td><a href="https://www.amazon.in/Cubelelo-ShengShou-Brainteaser-Stressbuster-Anti-Anxiety/dp/B09NDL11WS/ref=sr_1_1_sspa?keywords=mirror+cube&qid=1675489222&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank"><button>click</button></a></td>
+                </tr>
+            </table>
+        </dl>
+        <p><abbr title="Rubik's cube">RU cu</abbr></p>
+            <p><a href="mailto:211801410003.cutmap.ac.in">211801410003@cutmap.ac.in</a></p>
+            <button><p>click here <a href="#top"> to go top</a></button>
+        <form>
+        <p>
+            <p><b>Please select your favorite Rubik's cube</b></p>
+            <input type="radio" name="cube" value="3x3" checked="checked">3x3
+            <input type="radio" name="cube" value="4x3" checked="checked">4x4
+            <input type="radio" name="cube" value="2x2" checked="checked">2x2
+            <input type="radio" name="cube" value="traingle" checked="checked">triangle
+        </p>
+        </form>
+        <p><button><a href="mailto:hemanthgidutri46@gmail.com">
+             Contact us</a></button> for information</p>
+        <p>For admin information<button><a href="admin.html"target='_blank'>key</a></button></p>
+        <h3>For any queries <a href="queries.html" target="_blank">click here</a></h3>
+    </body>
+</html>, 

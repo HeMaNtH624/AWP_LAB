@@ -1,0 +1,18 @@
+.model{
+    color: rgb(239, 23, 23);
+    font-style: normal;
+    font-weight: 200;
+    text-decoration: dotted;
+    font-size: larger;
+}
+.beg{
+    color: rgb(215, 40, 40);
+    font-weight: 300;
+    font-style: calc();
+}
+.card{
+    background-color:gray;
+}
+.cube1{
+    text-align: justify;
+}
